@@ -1,5 +1,5 @@
-baseURL = "https://ldeso.github.io/hugo-flex-demo/"
-title = "Hugo Flex Demo"
+baseURL = "https://ldeso.github.io/hugo-flex-demo-preview/"
+title = "Hugo Flex Demo Preview"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
 languageCode = "en"
