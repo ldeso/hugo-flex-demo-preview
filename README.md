@@ -1,6 +1,6 @@
-# Hugo Flex Demo
+# Hugo Flex Demo Preview
 
-This repository offers an example site for the [Hugo Flex](https://github.com/ldeso/hugo-flex) theme.
+This repository offers an example site for the development branch of the [Hugo Flex](https://github.com/ldeso/hugo-flex) theme.
 
 # Using
 
@@ -9,8 +9,8 @@ This repository offers an example site for the [Hugo Flex](https://github.com/ld
 2. Clone this repository
 
 ```bash
-git clone --recurse-submodules https://github.com/ldeso/hugo-flex-demo.git
-cd hugo-flex-demo
+git clone --recurse-submodules https://github.com/ldeso/hugo-flex-demo-preview.git
+cd hugo-flex-demo-preview
 ```
 
 3. Run Hugo
