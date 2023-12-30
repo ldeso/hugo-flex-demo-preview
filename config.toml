@@ -50,6 +50,11 @@ ignoreErrors = ["error-remote-getjson"]
   [markup.highlight]
     noClasses = false
 
+[outputs]
+  section = [ "html" ]
+  taxonomy = [ "html" ]
+  term = [ "html" ]
+
 [outputFormats]
 
   [outputFormats.RSS]
