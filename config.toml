@@ -53,7 +53,7 @@ ignoreErrors = ["error-remote-getjson"]
 [outputFormats]
 
   [outputFormats.RSS]
-    mediatype = "application/rss"
+    mediatype = "application/rss+xml"
     baseName = "feed"
 
 [params]
