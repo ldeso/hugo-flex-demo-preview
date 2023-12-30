@@ -50,6 +50,12 @@ ignoreErrors = ["error-remote-getjson"]
   [markup.highlight]
     noClasses = false
 
+[outputFormats]
+
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
+
 [params]
   description = "An example site for the Hugo Flex theme."
   favicon = true
