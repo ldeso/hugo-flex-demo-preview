@@ -30,13 +30,13 @@ In this example we will be using [KaTeX](https://katex.org/)
 
 {{< math >}}
 <p>
-Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
+Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$
 </p>
 {{</ math >}}
 
-{{< math >}}
+{{% math %}}
 Block math:
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
 $$
-{{</ math >}}
+{{% /math %}}
