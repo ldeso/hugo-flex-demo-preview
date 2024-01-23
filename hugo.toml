@@ -44,11 +44,19 @@ ignoreErrors = ["error-remote-getjson"]
 
 [markup]
 
-  [markup.goldmark.renderer]
-    unsafe = true
-
   [markup.highlight]
     noClasses = false
+
+  [markup.goldmark]
+
+    [markup.goldmark.renderer]
+      unsafe = true
+
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+
+      [markup.goldmark.parser.attribute]
+        block = true
 
 [outputs]
   section = [ "html" ]
@@ -69,7 +77,7 @@ ignoreErrors = ["error-remote-getjson"]
   noClasses = false
   katex = ""
   linkicons = "hover"
-  css = [ "css/emojify.css", "css/nowrap.css" ]
+  css = [ "css/center.css", "css/emojify.css", "css/nowrap.css" ]
 
   [params.author]
     name = "Steve Francia"
