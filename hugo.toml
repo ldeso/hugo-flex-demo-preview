@@ -58,6 +58,15 @@ ignoreErrors = ["error-remote-getjson"]
       [markup.goldmark.parser.attribute]
         block = true
 
+    [markup.goldmark.extensions]
+
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+
+        [markup.goldmark.extensions.passthrough.delimiters]
+          inline = [['\(', '\)'], ['$', '$']]
+          block = [['\[', '\]'], ['$$', '$$']]
+
 [outputs]
   section = [ "html" ]
   taxonomy = [ "html" ]
@@ -78,6 +87,10 @@ ignoreErrors = ["error-remote-getjson"]
   katex = ""
   linkicons = "hover"
   css = [ "css/center.css", "css/emojify.css", "css/nowrap.css" ]
+
+  [params.mathdelim]
+    inline = [['\(', '\)'], ['$', '$']]
+    block = [['\[', '\]'], ['$$', '$$']]
 
   [params.author]
     name = "Steve Francia"

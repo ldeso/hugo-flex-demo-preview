@@ -6,37 +6,30 @@ description: A brief guide to setup KaTeX
 math: true
 ---
 
-Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
-<!--more-->
+Mathematical formulas written in LaTeX notation can be rendered to HTML on the client side by bundling the [KaTeX](https://katex.org/) library with the website.<!--more-->
+Rendering can take place either globally, or in specific locations using a built-in shortcode.
 
-In this example we will be using [KaTeX](https://katex.org/)
+1. Math can be rendered globally or on a per-page basis by setting the `math` parameter to `true` in the site configuration or on specific pages, and by [enabling the passthrough extension](https://gohugo.io/content-management/mathematics/) in the site configuration.
 
-- Create a partial under `/layouts/partials/math.html`
-- Within this partial reference the [Auto-render Extension](https://katex.org/docs/autorender.html) or host these scripts locally.
-- Include the partial in your templates like so:  
+2. If the `math` parameter is set to `false`, mathematical formulas can still by rendered by surrounding them with the `math` shortcode:
 
-```bash
-{{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
-{{ end }}
-```
+    ```
+    {{%/* math */%}}
+    Inline formulas such as $y=ax+b$ are supported, displayed formulas as well:
 
-- To enable KaTex globally set the parameter `math` to `true` in a project's configuration
-- To enable KaTex on a per page basis include the parameter `math: true` in content files
+    $$e^{i\pi}+1=0$$
+    {{%/* /math */%}}
+    ```
+
+As of 2024, it is [not yet possible](https://github.com/gohugoio/hugo/issues/10044) to render math on the server side with Hugo.
 
 **Note:** Use the online reference of [Supported TeX Functions](https://katex.org/docs/supported.html)
 
 ### Examples
 
-{{< math >}}
-<p>
 Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$
-</p>
-{{</ math >}}
 
-{{% math %}}
 Block math:
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
 $$
-{{% /math %}}
