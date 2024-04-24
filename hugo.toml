@@ -86,7 +86,7 @@ ignoreErrors = ["error-remote-getjson"]
   noClasses = false
   katex = ""
   linkicons = "hover"
-  css = [ "css/center.css", "css/emojify.css", "css/nowrap.css" ]
+  css = [ "css/canon.css", "css/center.css", "css/emojify.css", "css/nowrap.css" ]
 
   [params.mathdelim]
     inline = [['\(', '\)'], ['$', '$']]
